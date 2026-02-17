@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Projects | Lev Kislyuk</title>
+    <meta name="description" content="Selected projects by Lev Kislyuk — from AI-powered DeFi protocols and analytics platforms to enterprise data warehouses processing 50M daily records.">
+    <meta property="og:title" content="Projects | Lev Kislyuk">
+    <meta property="og:description" content="Selected projects — AI-powered DeFi protocols, analytics platforms, and enterprise data warehouses.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projects | Lev Kislyuk">
+    <meta name="twitter:description" content="Selected projects — AI-powered DeFi protocols, analytics platforms, and enterprise data warehouses.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        },
+                        dark: {
+                            bg: '#0A0A0A',
+                            card: '#111111',
+                            border: '#222222'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-feature-settings: "cv05", "cv11", "ss01";
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .dark .glass-panel {
+            background: rgba(10, 10, 10, 0.7);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 dark:bg-dark-bg dark:text-zinc-200 transition-colors duration-300 selection:bg-primary-500/20">
+
+    <!-- Navigation -->
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+        
+        <!-- Hero Section -->
+        <section class="pb-8 px-6">
+            <div class="max-w-5xl mx-auto">
+                <div class="space-y-2 mb-8">
+                    <h1 class="text-3xl sm:text-5xl font-medium tracking-tight">
+                        Selected <span class="text-zinc-400 dark:text-zinc-500">Projects</span>
+                    </h1>
+                    <p class="text-base text-zinc-600 dark:text-zinc-400 max-w-2xl">
+                        A collection of production systems I've built — from data infrastructure to AI applications.
+                    </p>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="space-y-5">
+                    
+                    <!-- Featured: Interactive CV Game -->
+                    <article class="card-hover bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 border border-indigo-200 dark:border-indigo-800/50 rounded-xl p-4 md:p-5 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-lg">
+                                        <iconify-icon icon="solar:gameboy-linear" width="24"></iconify-icon>
+                                    </div>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="mb-3">
+                                        <div class="flex items-center gap-2.5 mb-1">
+                                            <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Interactive CV Game</h2>
+                                            <span class="px-2 py-0.5 bg-indigo-500 text-white text-[10px] uppercase font-bold tracking-wider rounded-full">New</span>
+                                        </div>
+                                        <p class="text-sm text-zinc-600 dark:text-zinc-300">3D open-world portfolio experience</p>
+                                    </div>
+                                    
+                                    <p class="text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed mb-3">
+                                        Drive through a cyberpunk city and explore interactive zones representing different aspects of my career. Built with Three.js for smooth 3D rendering and interactive gameplay.
+                                    </p>
+                                    
+                                    <div class="flex flex-wrap gap-2 mb-3">
+                                        <span class="px-2.5 py-1 bg-white/60 dark:bg-zinc-900/60 backdrop-blur border border-indigo-200 dark:border-indigo-700 text-xs text-zinc-700 dark:text-zinc-300 rounded-md font-medium">Three.js</span>
+                                        <span class="px-2.5 py-1 bg-white/60 dark:bg-zinc-900/60 backdrop-blur border border-indigo-200 dark:border-indigo-700 text-xs text-zinc-700 dark:text-zinc-300 rounded-md font-medium">WebGL</span>
+                                        <span class="px-2.5 py-1 bg-white/60 dark:bg-zinc-900/60 backdrop-blur border border-indigo-200 dark:border-indigo-700 text-xs text-zinc-700 dark:text-zinc-300 rounded-md font-medium">3D Graphics</span>
+                                        <span class="px-2.5 py-1 bg-white/60 dark:bg-zinc-900/60 backdrop-blur border border-indigo-200 dark:border-indigo-700 text-xs text-zinc-700 dark:text-zinc-300 rounded-md font-medium">Game Design</span>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-3">
+                                        <a href="cv-game.html" class="group inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white text-sm font-medium rounded-lg transition-all shadow-lg hover:shadow-xl">
+                                            <iconify-icon icon="solar:play-circle-bold" width="16"></iconify-icon>
+                                            Play Interactive CV
+                                            <iconify-icon icon="solar:arrow-right-linear" width="14" class="transition-transform group-hover:translate-x-1"></iconify-icon>
+                                        </a>
+                                        <span class="text-xs text-zinc-500 dark:text-zinc-400 italic">Use WASD to drive</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Animated background -->
+                        <div class="absolute right-0 bottom-0 w-96 h-96 bg-gradient-to-tl from-indigo-200 to-purple-200 dark:from-indigo-900/20 dark:to-purple-900/20 opacity-50 rounded-tl-full blur-3xl"></div>
+                    </article>
+                    
+                    <!-- Project 1: Pupas AI (most recent) -->
+                    <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
+                                        <img src="assets/pupas-logo.png" alt="Pupas AI Logo" class="w-full h-full object-contain" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div>
+                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Pupas AI Protocol</h2>
+                                            <p class="text-xs text-zinc-500 dark:text-zinc-400">Technical Product &middot; Autonomous DeFi Yield Optimization</p>
+                                        </div>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">May-Dec 2025</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">The Challenge</p>
+                                            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                                Crypto investors lacked tools to automatically optimize yield across DeFi protocols — manual strategies were slow, risky, and left money on the table. I set out to build an AI-driven protocol that could autonomously manage liquidity and maximize returns on Waves blockchain.
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">What I Did</p>
+                                            <ul class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed space-y-1.5">
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Took the product from idea to production — secured funding, assembled and led a cross-functional team of 5</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Architected end-to-end infrastructure: Ride smart contracts, AI agents (LangChain/LangGraph with RAG), Telegram bots, and web frontend</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Drove product strategy through user research and iterative testing, prioritizing features based on real DeFi market demands</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Grew the active user base to 60+ investors through community building and product-led growth</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Key Impact -->
+                                        <div class="flex flex-wrap gap-3">
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">190%</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">APY achieved</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">$200K</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">TVL at peak</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">60+</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">active investors</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex flex-wrap gap-1.5">
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">LangChain</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">LangGraph</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">RAG</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Python</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Ride</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Waves</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Smart Contracts</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Telegram Bots</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center flex-wrap gap-3 text-sm mt-4">
+                                        <a href="https://pupas.ai" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Website</a>
+                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <a href="https://x.com/Pupas_AI" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">X (Twitter)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 bottom-0 w-64 h-64 bg-gradient-to-tl from-zinc-100 to-transparent dark:from-zinc-800/20 opacity-40 rounded-tl-full"></div>
+                    </article>
+
+                    <!-- Project 2: Pygma Analytics Infrastructure -->
+                    <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
+                                        <img src="assets/pygma-logo.avif" alt="Pygma Logo" class="w-full h-full object-contain" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div>
+                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Pygma Analytics Infrastructure</h2>
+                                            <p class="text-xs text-zinc-500 dark:text-zinc-400">Lead Analytics Engineer &middot; AI-Powered Instagram Copilot</p>
+                                        </div>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Dec 2023-May 2025</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">The Challenge</p>
+                                            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                                Pygma, an AI-powered Instagram growth tool, had zero data infrastructure — no analytics, no attribution, no way to measure what drove product growth or inform ML model training. I was brought in as the first data hire to build everything from scratch.
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">What I Did</p>
+                                            <ul class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed space-y-1.5">
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Built the entire analytics stack from zero: BigQuery warehouse, Airflow orchestration, dbt transformations, Mixpanel product analytics, GTM and GA4 event tracking</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Collected and processed 20TB of Instagram profile data via APIs to power ML model training datasets</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Designed and shipped an attribution system matching user events to Meta/Google Ads campaigns — gave the growth team clear visibility into marketing ROI</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Created executive dashboards that became the primary decision-making tool for product, growth, and operations teams</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Key Impact -->
+                                        <div class="flex flex-wrap gap-3">
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">20TB</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">data processed</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">78%</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">attribution accuracy</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">0→1</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">analytics built from scratch</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex flex-wrap gap-1.5">
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">BigQuery</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">dbt</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Python</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Airflow</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Mixpanel</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">GTM</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">GA4</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Instagram API</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center flex-wrap gap-3 text-sm mt-4">
+                                        <a href="https://www.pygma.me" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Website</a>
+                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <a href="https://www.producthunt.com/products/pygma" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Product Hunt</a>
+                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <a href="https://www.instagram.com/pygma.me/?hl=en" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Instagram</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 bottom-0 w-64 h-64 bg-gradient-to-tl from-zinc-100 to-transparent dark:from-zinc-800/20 opacity-40 rounded-tl-full"></div>
+                    </article>
+
+                    <!-- Project 3: Multi-Chain Analytics -->
+                    <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
+                                        <img src="assets/blockchain-icon.png" alt="Web3 / Blockchain" class="w-full h-full object-contain" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div>
+                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Multi-Chain Analytics Platform</h2>
+                                            <p class="text-xs text-zinc-500 dark:text-zinc-400">Analytics Engineer in Web3 &middot; Private Investment Infrastructure</p>
+                                        </div>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Sep 2022-Apr 2023</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">The Challenge</p>
+                                            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                                DeFi investment decisions across multiple blockchains required pulling fragmented data from dozens of sources — there was no unified view. I built a private analytics platform to aggregate cross-chain data and enable real-time investment analysis.
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">What I Did</p>
+                                            <ul class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed space-y-1.5">
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Designed and managed data warehousing for 6 blockchain networks (EVM chains, Tron, Near) with real-time analytical data marts</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Deployed and maintained the full infrastructure stack: Clickhouse, Airflow, Grafana, and multiple blockchain nodes</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Built ETL pipelines ingesting data from 8+ sources for smart contract labeling and cross-chain opportunity analysis</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Key Impact -->
+                                        <div class="flex flex-wrap gap-3">
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">6</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">blockchains unified</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">8+</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">data sources integrated</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">Real-time</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">analytics updates</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex flex-wrap gap-1.5">
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Python</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">PostgreSQL</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Clickhouse</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Web3.py</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Airflow</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Grafana</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Blockchain Nodes</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- No public links for this project -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 bottom-0 w-64 h-64 bg-gradient-to-tl from-zinc-100 to-transparent dark:from-zinc-800/20 opacity-40 rounded-tl-full"></div>
+                    </article>
+
+                    <!-- Project 4: Aero Data Platform -->
+                    <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
+                                        <img src="assets/aero.jpg" alt="Aero Logo" class="w-full h-full object-contain" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div>
+                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Aero Data Platform</h2>
+                                            <p class="text-xs text-zinc-500 dark:text-zinc-400">Senior Data Engineer &middot; eCommerce Data Warehouse</p>
+                                        </div>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Mar 2023-Jun 2024</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">The Challenge</p>
+                                            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                                A fast-growing eCommerce agency needed a data warehouse that could handle massive daily volumes across orders, inventory, and user analytics — while keeping queries fast and storage costs under control. The existing infrastructure couldn't scale.
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">What I Did</p>
+                                            <ul class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed space-y-1.5">
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Designed scalable data warehouses on Yandex Cloud processing 50M records daily with sub-second query performance</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Engineered automated ETL pipelines (Airflow, dbt, Nifi) and built a data quality framework with Great Expectations</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Optimized storage architecture, cutting costs by 30% without sacrificing query speed</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Scaled the data engineering team — ran training sessions and conducted technical interviews</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Key Impact -->
+                                        <div class="flex flex-wrap gap-3">
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">50M</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">records/day</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">95%</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">data accuracy</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">-30%</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">storage costs</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex flex-wrap gap-1.5">
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Clickhouse</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Airflow</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">dbt</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Nifi</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Python</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Great Expectations</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Yandex Cloud</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-3 text-sm mt-4">
+                                        <a href="https://aeroidea.ru" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Company Website</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 bottom-0 w-64 h-64 bg-gradient-to-tl from-zinc-100 to-transparent dark:from-zinc-800/20 opacity-40 rounded-tl-full"></div>
+                    </article>
+
+                    <!-- Project 5: Financial Data Hub -->
+                    <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <div class="flex flex-col md:flex-row gap-5">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
+                                        <img src="assets/glowbyte-logo.png" alt="Glowbyte Logo" class="w-full h-full object-contain" loading="lazy">
+                                    </div>
+                                </div>
+                                <div class="flex-1 flex flex-col">
+                                    <div class="flex items-start justify-between mb-2">
+                                        <div>
+                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Enterprise Data Integration Platform</h2>
+                                            <p class="text-xs text-zinc-500 dark:text-zinc-400">Data Engineer &middot; Glowbyte Consulting &middot; Banking & Retail</p>
+                                        </div>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Jun 2019-Sep 2022</span>
+                                    </div>
+
+                                    <div class="space-y-3">
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">The Challenge</p>
+                                            <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                                                Enterprise clients in banking and retail needed reliable, high-throughput data integrations across hundreds of database tables — with strict SLAs, complex data lineage, and zero tolerance for downtime. I joined as part of Glowbyte's consulting team and grew from junior to a key contributor on major client engagements.
+                                            </p>
+                                        </div>
+
+                                        <div>
+                                            <p class="text-xs font-semibold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider mb-1">What I Did</p>
+                                            <ul class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed space-y-1.5">
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Built and maintained 13 enterprise data integrations managing 1,500+ database tables across banking and retail clients</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Developed real-time analytics tools and custom dashboards, reducing data processing latency by 30%</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Established CI/CD pipelines for seamless deployment across multiple client environments</span></li>
+                                                <li class="flex gap-2"><span class="text-primary-500 shrink-0 leading-relaxed">&bull;</span><span>Contributed to high-profile projects: SIBUR's data-driven transformation and Lemana PRO's AI-powered demand forecasting</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- Key Impact -->
+                                        <div class="flex flex-wrap gap-3">
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">1,500+</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">tables managed</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">13</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">integrations built</span>
+                                            </div>
+                                            <div class="flex items-center gap-2 px-3 py-1.5 bg-primary-50 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/20 rounded-lg">
+                                                <span class="text-lg font-semibold text-primary-600 dark:text-primary-500">-30%</span>
+                                                <span class="text-[11px] text-zinc-500 dark:text-zinc-400">processing latency</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="flex flex-wrap gap-1.5">
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">PostgreSQL</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Greenplum</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Vertica</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">Python</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">ETL</span>
+                                            <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-600 dark:text-zinc-400 rounded font-medium">CI/CD</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-3 text-sm mt-4">
+                                        <a href="https://glowbyteconsulting.com/en" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Company Website</a>
+                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <a href="https://sibur.digital/84-osobennosti-data-driven-" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Data-driven case (SIBUR)</a>
+                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <a href="https://glowbyteconsulting.com/lemana-tech-sovmestno-s-glowbyte-vnedrila-ai" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Demand forecasting case (Lemana PRO)</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 bottom-0 w-64 h-64 bg-gradient-to-tl from-zinc-100 to-transparent dark:from-zinc-800/20 opacity-40 rounded-tl-full"></div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load components -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+</body></html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Blog | Lev Kislyuk</title>
+    <meta name="description" content="Writing by Lev Kislyuk on data engineering, product development, AI agents, and the intersection of technology and human needs.">
+    <meta property="og:title" content="Blog | Lev Kislyuk">
+    <meta property="og:description" content="Thoughts on data engineering, product development, AI agents, and technology.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Blog | Lev Kislyuk">
+    <meta name="twitter:description" content="Thoughts on data engineering, product development, AI agents, and technology.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        },
+                        dark: {
+                            bg: '#0A0A0A',
+                            card: '#111111',
+                            border: '#222222'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-feature-settings: "cv05", "cv11", "ss01";
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .dark .glass-panel {
+            background: rgba(10, 10, 10, 0.7);
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 dark:bg-dark-bg dark:text-zinc-200 transition-colors duration-300 selection:bg-primary-500/20">
+
+    <!-- Navigation -->
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+        
+        <!-- Hero Section -->
+        <section class="py-8 px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-2 mb-8">
+                    <h1 class="text-3xl sm:text-5xl font-medium tracking-tight">
+                        Writing & <span class="text-zinc-400 dark:text-zinc-500">Thinking</span>
+                    </h1>
+                    <p class="text-base text-zinc-600 dark:text-zinc-400 max-w-2xl">
+                        Thoughts on data engineering, product development, and the intersection of technology and human needs.
+                    </p>
+                </div>
+
+                <!-- All Articles -->
+                <div class="space-y-3">
+                    <article>
+                        <div class="block bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <h3 class="text-lg font-medium text-zinc-900 dark:text-white">
+                                            Optimizing dbt pipelines for scale
+                                        </h3>
+                                        <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] uppercase tracking-wider font-medium text-zinc-400 dark:text-zinc-500 rounded-full">Coming soon</span>
+                                    </div>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                        How we reduced our data transformation time by 60% while processing 50M daily records. Lessons learned from optimizing incremental models, leveraging BigQuery partitioning, and implementing effective testing strategies.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">dbt</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">BigQuery</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Data Engineering</span>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-zinc-400 font-mono whitespace-nowrap">Jan 15, 2026</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="block bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <h3 class="text-lg font-medium text-zinc-900 dark:text-white">
+                                            Bridging the gap: Engineering vs. Product needs
+                                        </h3>
+                                        <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] uppercase tracking-wider font-medium text-zinc-400 dark:text-zinc-500 rounded-full">Coming soon</span>
+                                    </div>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                        Reflections on building products that balance technical excellence with user value. Why the best technical solution isn't always the right product decision.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Product</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Leadership</span>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-zinc-400 font-mono whitespace-nowrap">Dec 10, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="block bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <h3 class="text-lg font-medium text-zinc-900 dark:text-white">
+                                            Building autonomous agents with LangGraph
+                                        </h3>
+                                        <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] uppercase tracking-wider font-medium text-zinc-400 dark:text-zinc-500 rounded-full">Coming soon</span>
+                                    </div>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                        A deep dive into creating reliable AI agents for DeFi yield optimization. From RAG implementation to handling blockchain state transitions.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">AI</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">LangChain</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Web3</span>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-zinc-400 font-mono whitespace-nowrap">Nov 22, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="block bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <h3 class="text-lg font-medium text-zinc-900 dark:text-white">
+                                            The analytics engineer's toolkit for 2025
+                                        </h3>
+                                        <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] uppercase tracking-wider font-medium text-zinc-400 dark:text-zinc-500 rounded-full">Coming soon</span>
+                                    </div>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                        Modern data stack essentials: dbt, Airflow, Great Expectations, and the tools that matter for building reliable data pipelines.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Analytics</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Tools</span>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-zinc-400 font-mono whitespace-nowrap">Oct 8, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="block bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <h3 class="text-lg font-medium text-zinc-900 dark:text-white">
+                                            Data quality at scale: Beyond unit tests
+                                        </h3>
+                                        <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] uppercase tracking-wider font-medium text-zinc-400 dark:text-zinc-500 rounded-full">Coming soon</span>
+                                    </div>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                        How we achieved 95% data accuracy processing 20TB of Instagram data. Implementing Great Expectations and building trust in your data.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Data Quality</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Testing</span>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-zinc-400 font-mono whitespace-nowrap">Sep 14, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="block bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-lg p-5">
+                            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <h3 class="text-lg font-medium text-zinc-900 dark:text-white">
+                                            From Greenplum to Clickhouse: A migration story
+                                        </h3>
+                                        <span class="px-2 py-0.5 bg-zinc-100 dark:bg-zinc-800 text-[10px] uppercase tracking-wider font-medium text-zinc-400 dark:text-zinc-500 rounded-full">Coming soon</span>
+                                    </div>
+                                    <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">
+                                        Lessons learned migrating 1500 tables from Greenplum to Clickhouse while maintaining zero downtime for critical business operations.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Migration</span>
+                                        <span class="px-2.5 py-1 bg-zinc-100 dark:bg-zinc-800 text-xs text-zinc-600 dark:text-zinc-400 rounded-md">Infrastructure</span>
+                                    </div>
+                                </div>
+                                <span class="text-sm text-zinc-400 font-mono whitespace-nowrap">Aug 3, 2025</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load components -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+</body></html>

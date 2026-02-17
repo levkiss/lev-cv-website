@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Contact | Lev Kislyuk</title>
+    <meta name="description" content="Get in touch with Lev Kislyuk — open to new opportunities, collaborations, and conversations about data, product, and AI.">
+    <meta property="og:title" content="Contact | Lev Kislyuk">
+    <meta property="og:description" content="Get in touch — open to new opportunities, collaborations, and conversations about data, product, and AI.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact | Lev Kislyuk">
+    <meta name="twitter:description" content="Get in touch — open to new opportunities, collaborations, and conversations about data, product, and AI.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            900: '#1e3a8a',
+                        },
+                        dark: {
+                            bg: '#0A0A0A',
+                            card: '#111111',
+                            border: '#222222'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-feature-settings: "cv05", "cv11", "ss01";
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .dark .glass-panel {
+            background: rgba(10, 10, 10, 0.7);
+        }
+
+        .contact-link {
+            transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 dark:bg-dark-bg dark:text-zinc-200 transition-colors duration-300 selection:bg-primary-500/20">
+
+    <!-- Navigation -->
+    <div id="header-placeholder"></div>
+
+    <main class="pt-20">
+        
+        <!-- Compact Contact Section -->
+        <section class="flex items-center justify-center px-6 py-16 min-h-[calc(100vh-3.5rem)]">
+            <div class="max-w-2xl w-full">
+                <!-- Header -->
+                <div class="text-center mb-12 space-y-3">
+                    <h1 class="text-3xl sm:text-5xl font-medium tracking-tight">
+                        Let's <span class="text-zinc-400 dark:text-zinc-500">Connect</span>
+                    </h1>
+                    <p class="text-sm text-zinc-600 dark:text-zinc-400">
+                        Open to discussing new opportunities, projects, or conversations about data, product, and technology.
+                    </p>
+                </div>
+
+                <!-- Compact Contact List -->
+                <div class="bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl overflow-hidden">
+                    
+                    <!-- Email -->
+                    <a href="mailto:ls.kislyuk@gmail.com" class="contact-link block group border-b border-zinc-100 dark:border-zinc-800 last:border-0 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors">
+                        <div class="flex items-center gap-4 px-5 py-4">
+                            <div class="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 dark:text-zinc-400 flex-shrink-0">
+                                <iconify-icon icon="solar:letter-linear" width="16"></iconify-icon>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-medium text-zinc-900 dark:text-white mb-0.5">Email</h3>
+                                <p class="text-xs text-zinc-500 dark:text-zinc-400">For formal inquiries and opportunities</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-mono text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    ls.kislyuk@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Telegram -->
+                    <a href="https://t.me/levkiss" target="_blank" rel="noopener noreferrer" class="contact-link block group border-b border-zinc-100 dark:border-zinc-800 last:border-0 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors">
+                        <div class="flex items-center gap-4 px-5 py-4">
+                            <div class="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 dark:text-zinc-400 flex-shrink-0">
+                                <iconify-icon icon="solar:chat-round-linear" width="16"></iconify-icon>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-medium text-zinc-900 dark:text-white mb-0.5">Telegram</h3>
+                                <p class="text-xs text-zinc-500 dark:text-zinc-400">Quick chats and casual discussions</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-mono text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    @levkiss
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/lev-kislyuk" target="_blank" rel="noopener noreferrer" class="contact-link block group border-b border-zinc-100 dark:border-zinc-800 last:border-0 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors">
+                        <div class="flex items-center gap-4 px-5 py-4">
+                            <div class="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 dark:text-zinc-400 flex-shrink-0">
+                                <iconify-icon icon="solar:user-id-linear" width="16"></iconify-icon>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-medium text-zinc-900 dark:text-white mb-0.5">LinkedIn</h3>
+                                <p class="text-xs text-zinc-500 dark:text-zinc-400">Professional network and career history</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-mono text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    in/lev-kislyuk
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/levkiss" target="_blank" rel="noopener noreferrer" class="contact-link block group border-b border-zinc-100 dark:border-zinc-800 last:border-0 hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors">
+                        <div class="flex items-center gap-4 px-5 py-4">
+                            <div class="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 dark:text-zinc-400 flex-shrink-0">
+                                <iconify-icon icon="solar:code-circle-linear" width="16"></iconify-icon>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-medium text-zinc-900 dark:text-white mb-0.5">GitHub</h3>
+                                <p class="text-xs text-zinc-500 dark:text-zinc-400">Code repositories and open source work</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-mono text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    github.com/levkiss
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Calendly -->
+                    <a href="https://calendly.com/ls-kislyuk" target="_blank" rel="noopener noreferrer" class="contact-link block group hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors">
+                        <div class="flex items-center gap-4 px-5 py-4">
+                            <div class="w-8 h-8 rounded-lg bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-500 dark:text-zinc-400 flex-shrink-0">
+                                <iconify-icon icon="solar:calendar-linear" width="16"></iconify-icon>
+                            </div>
+                            <div class="flex-1 min-w-0">
+                                <h3 class="text-sm font-medium text-zinc-900 dark:text-white mb-0.5">Schedule a Meeting</h3>
+                                <p class="text-xs text-zinc-500 dark:text-zinc-400">Book a time to chat via Calendly</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="font-mono text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                                    calendly.com/ls-kislyuk
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load components -->
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script>
+        // Copy email on click (optional enhancement)
+        const emailCard = document.querySelector('a[href^="mailto:"]');
+        emailCard.addEventListener('click', (e) => {
+            const email = 'ls.kislyuk@gmail.com';
+            if (navigator.clipboard) {
+                e.preventDefault();
+                navigator.clipboard.writeText(email).then(() => {
+                    // Optional: Show a toast notification
+                    console.log('Email copied to clipboard!');
+                    // Then open email client
+                    window.location.href = 'mailto:' + email;
+                });
+            }
+        });
+    </script>
+
+</body></html>

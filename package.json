@@ -1,0 +1,15 @@
+{
+  "name": "cv-website",
+  "version": "1.0.0",
+  "description": "Interactive CV website for Lev Kislyuk",
+  "scripts": {
+    "dev": "npx http-server -p 3000 -c-1 -o",
+    "start": "npx http-server -p 3000 -c-1"
+  },
+  "keywords": ["cv", "portfolio", "interactive"],
+  "author": "Lev Kislyuk",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
