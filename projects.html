@@ -100,17 +100,20 @@
                     <!-- Featured: Interactive CV Game -->
                     <article class="card-hover bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 border border-indigo-200 dark:border-indigo-800/50 rounded-xl p-4 md:p-5 relative overflow-hidden">
                         <div class="relative z-10">
-                            <div class="flex flex-col md:flex-row gap-5">
-                                <div class="flex-shrink-0">
+                            <div class="md:flex md:gap-5">
+                                <div class="flex-shrink-0 hidden md:block">
                                     <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-lg">
                                         <iconify-icon icon="solar:gameboy-linear" width="24"></iconify-icon>
                                     </div>
                                 </div>
-                                <div class="flex-1">
+                                <div class="flex-1 min-w-0">
                                     <div class="mb-3">
                                         <div class="flex items-center gap-2.5 mb-1">
+                                            <div class="w-9 h-9 md:hidden rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-lg flex-shrink-0">
+                                                <iconify-icon icon="solar:gameboy-linear" width="18"></iconify-icon>
+                                            </div>
                                             <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Interactive CV Game</h2>
-                                            <span class="px-2 py-0.5 bg-indigo-500 text-white text-[10px] uppercase font-bold tracking-wider rounded-full">New</span>
+                                            <span class="px-2 py-0.5 bg-indigo-500 text-white text-[10px] uppercase font-bold tracking-wider rounded-full shrink-0">New</span>
                                         </div>
                                         <p class="text-sm text-zinc-600 dark:text-zinc-300">3D open-world portfolio experience</p>
                                     </div>
@@ -144,19 +147,24 @@
                     <!-- Project 1: Pupas AI (most recent) -->
                     <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
                         <div class="relative z-10">
-                            <div class="flex flex-col md:flex-row gap-5">
-                                <div class="flex-shrink-0">
+                            <div class="md:flex md:gap-5">
+                                <div class="flex-shrink-0 hidden md:block">
                                     <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
                                         <img src="assets/pupas-logo.png" alt="Pupas AI Logo" class="w-full h-full object-contain" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="flex-1 flex flex-col">
-                                    <div class="flex items-start justify-between mb-2">
+                                <div class="flex-1 flex flex-col min-w-0">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-1">
                                         <div>
-                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Pupas AI Protocol</h2>
+                                            <div class="flex items-center gap-2.5 mb-0.5">
+                                                <div class="w-9 h-9 md:hidden rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden flex-shrink-0">
+                                                    <img src="assets/pupas-logo.png" alt="Pupas AI Logo" class="w-full h-full object-contain" loading="lazy">
+                                                </div>
+                                                <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Pupas AI Protocol</h2>
+                                            </div>
                                             <p class="text-xs text-zinc-500 dark:text-zinc-400">Technical Product &middot; Autonomous DeFi Yield Optimization</p>
                                         </div>
-                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">May-Dec 2025</span>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono shrink-0">May-Dec 2025</span>
                                     </div>
 
                                     <div class="space-y-3">
@@ -205,7 +213,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="flex items-center flex-wrap gap-3 text-sm mt-4">
+                                    <div class="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm mt-4">
                                         <a href="https://pupas.ai" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Website</a>
                                         <span class="text-zinc-300 dark:text-zinc-600">•</span>
                                         <a href="https://x.com/Pupas_AI" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">X (Twitter)</a>
@@ -219,19 +227,24 @@
                     <!-- Project 2: Pygma Analytics Infrastructure -->
                     <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
                         <div class="relative z-10">
-                            <div class="flex flex-col md:flex-row gap-5">
-                                <div class="flex-shrink-0">
+                            <div class="md:flex md:gap-5">
+                                <div class="flex-shrink-0 hidden md:block">
                                     <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
                                         <img src="assets/pygma-logo.avif" alt="Pygma Logo" class="w-full h-full object-contain" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="flex-1 flex flex-col">
-                                    <div class="flex items-start justify-between mb-2">
+                                <div class="flex-1 flex flex-col min-w-0">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-1">
                                         <div>
-                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Pygma Analytics Infrastructure</h2>
+                                            <div class="flex items-center gap-2.5 mb-0.5">
+                                                <div class="w-9 h-9 md:hidden rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden flex-shrink-0">
+                                                    <img src="assets/pygma-logo.avif" alt="Pygma Logo" class="w-full h-full object-contain" loading="lazy">
+                                                </div>
+                                                <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Pygma Analytics Infrastructure</h2>
+                                            </div>
                                             <p class="text-xs text-zinc-500 dark:text-zinc-400">Lead Analytics Engineer &middot; AI-Powered Instagram Copilot</p>
                                         </div>
-                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Dec 2023-May 2025</span>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono shrink-0">Dec 2023-May 2025</span>
                                     </div>
 
                                     <div class="space-y-3">
@@ -280,7 +293,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="flex items-center flex-wrap gap-3 text-sm mt-4">
+                                    <div class="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm mt-4">
                                         <a href="https://www.pygma.me" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Website</a>
                                         <span class="text-zinc-300 dark:text-zinc-600">•</span>
                                         <a href="https://www.producthunt.com/products/pygma" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Product Hunt</a>
@@ -296,19 +309,24 @@
                     <!-- Project 3: Multi-Chain Analytics -->
                     <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
                         <div class="relative z-10">
-                            <div class="flex flex-col md:flex-row gap-5">
-                                <div class="flex-shrink-0">
+                            <div class="md:flex md:gap-5">
+                                <div class="flex-shrink-0 hidden md:block">
                                     <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
                                         <img src="assets/blockchain-icon.png" alt="Web3 / Blockchain" class="w-full h-full object-contain" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="flex-1 flex flex-col">
-                                    <div class="flex items-start justify-between mb-2">
+                                <div class="flex-1 flex flex-col min-w-0">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-1">
                                         <div>
-                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Multi-Chain Analytics Platform</h2>
+                                            <div class="flex items-center gap-2.5 mb-0.5">
+                                                <div class="w-9 h-9 md:hidden rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden flex-shrink-0">
+                                                    <img src="assets/blockchain-icon.png" alt="Web3 / Blockchain" class="w-full h-full object-contain" loading="lazy">
+                                                </div>
+                                                <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Multi-Chain Analytics Platform</h2>
+                                            </div>
                                             <p class="text-xs text-zinc-500 dark:text-zinc-400">Analytics Engineer in Web3 &middot; Private Investment Infrastructure</p>
                                         </div>
-                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Sep 2022-Apr 2023</span>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono shrink-0">Sep 2022-Apr 2023</span>
                                     </div>
 
                                     <div class="space-y-3">
@@ -365,19 +383,24 @@
                     <!-- Project 4: Aero Data Platform -->
                     <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
                         <div class="relative z-10">
-                            <div class="flex flex-col md:flex-row gap-5">
-                                <div class="flex-shrink-0">
+                            <div class="md:flex md:gap-5">
+                                <div class="flex-shrink-0 hidden md:block">
                                     <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
                                         <img src="assets/aero.jpg" alt="Aero Logo" class="w-full h-full object-contain" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="flex-1 flex flex-col">
-                                    <div class="flex items-start justify-between mb-2">
+                                <div class="flex-1 flex flex-col min-w-0">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-1">
                                         <div>
-                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Aero Data Platform</h2>
+                                            <div class="flex items-center gap-2.5 mb-0.5">
+                                                <div class="w-9 h-9 md:hidden rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden flex-shrink-0">
+                                                    <img src="assets/aero.jpg" alt="Aero Logo" class="w-full h-full object-contain" loading="lazy">
+                                                </div>
+                                                <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Aero Data Platform</h2>
+                                            </div>
                                             <p class="text-xs text-zinc-500 dark:text-zinc-400">Senior Data Engineer &middot; eCommerce Data Warehouse</p>
                                         </div>
-                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Mar 2023-Jun 2024</span>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono shrink-0">Mar 2023-Jun 2024</span>
                                     </div>
 
                                     <div class="space-y-3">
@@ -425,7 +448,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="flex items-center gap-3 text-sm mt-4">
+                                    <div class="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm mt-4">
                                         <a href="https://aeroidea.ru" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Company Website</a>
                                     </div>
                                 </div>
@@ -437,19 +460,24 @@
                     <!-- Project 5: Financial Data Hub -->
                     <article class="card-hover bg-white dark:bg-dark-card border border-zinc-200 dark:border-dark-border rounded-xl p-4 relative overflow-hidden">
                         <div class="relative z-10">
-                            <div class="flex flex-col md:flex-row gap-5">
-                                <div class="flex-shrink-0">
+                            <div class="md:flex md:gap-5">
+                                <div class="flex-shrink-0 hidden md:block">
                                     <div class="w-12 h-12 rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden">
                                         <img src="assets/glowbyte-logo.png" alt="Glowbyte Logo" class="w-full h-full object-contain" loading="lazy">
                                     </div>
                                 </div>
-                                <div class="flex-1 flex flex-col">
-                                    <div class="flex items-start justify-between mb-2">
+                                <div class="flex-1 flex flex-col min-w-0">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2 gap-1">
                                         <div>
-                                            <h2 class="text-xl font-medium mb-0.5 text-zinc-900 dark:text-white">Enterprise Data Integration Platform</h2>
+                                            <div class="flex items-center gap-2.5 mb-0.5">
+                                                <div class="w-9 h-9 md:hidden rounded-lg bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 flex items-center justify-center overflow-hidden flex-shrink-0">
+                                                    <img src="assets/glowbyte-logo.png" alt="Glowbyte Logo" class="w-full h-full object-contain" loading="lazy">
+                                                </div>
+                                                <h2 class="text-xl font-medium text-zinc-900 dark:text-white">Enterprise Data Integration Platform</h2>
+                                            </div>
                                             <p class="text-xs text-zinc-500 dark:text-zinc-400">Data Engineer &middot; Glowbyte Consulting &middot; Banking & Retail</p>
                                         </div>
-                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono">Jun 2019-Sep 2022</span>
+                                        <span class="text-xs text-zinc-400 dark:text-zinc-500 font-mono shrink-0">Jun 2019-Sep 2022</span>
                                     </div>
 
                                     <div class="space-y-3">
@@ -496,11 +524,11 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="flex items-center gap-3 text-sm mt-4">
+                                    <div class="flex flex-col sm:flex-row sm:items-center flex-wrap gap-x-3 gap-y-1 text-sm mt-4">
                                         <a href="https://glowbyteconsulting.com/en" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Company Website</a>
-                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <span class="text-zinc-300 dark:text-zinc-600 hidden sm:inline">•</span>
                                         <a href="https://sibur.digital/84-osobennosti-data-driven-" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Data-driven case (SIBUR)</a>
-                                        <span class="text-zinc-300 dark:text-zinc-600">•</span>
+                                        <span class="text-zinc-300 dark:text-zinc-600 hidden sm:inline">•</span>
                                         <a href="https://glowbyteconsulting.com/lemana-tech-sovmestno-s-glowbyte-vnedrila-ai" target="_blank" rel="noopener noreferrer" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Demand forecasting case (Lemana PRO)</a>
                                     </div>
                                 </div>

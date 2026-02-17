@@ -35,3 +35,12 @@ Then open `http://localhost:3000` in your browser.
 - Vanilla JavaScript
 - Iconify (icons)
 - Google Fonts (Inter, JetBrains Mono)
+
+## Deployment
+
+Deployed as a static site on Vercel:
+
+1. Push this repository to GitHub (or another supported Git provider).
+2. In Vercel, click **New Project** and import the repo.
+3. Use the **Static Site** (Other) preset, leave **Build Command** empty, and set **Output Directory** to `.`.
+4. Click **Deploy**. Subsequent pushes to the default branch will auto-deploy.
