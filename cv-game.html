@@ -902,7 +902,17 @@ animation: pulse-action 1.5s ease-in-out infinite;
             }
         }
 
-        // Input - IMPROVED with focus management
+        // Input
+        function getMappedKey(e) {
+            // Use e.code for WASD (physical key, layout-independent — industry standard for games)
+            // Use e.key for arrow keys (no code ambiguity there)
+            if (e.code === 'KeyW' || e.key === 'ArrowUp')    return 'w';
+            if (e.code === 'KeyS' || e.key === 'ArrowDown')  return 's';
+            if (e.code === 'KeyA' || e.key === 'ArrowLeft')  return 'a';
+            if (e.code === 'KeyD' || e.key === 'ArrowRight') return 'd';
+            return null;
+        }
+
         window.addEventListener('keydown', (e) => {
             // Modal handling
             if (state.modalOpen) {
@@ -912,24 +922,15 @@ animation: pulse-action 1.5s ease-in-out infinite;
                 }
                 return;
             }
-            
-            const k = e.key.toLowerCase();
-            
+
+            const mappedKey = getMappedKey(e);
+
             // Prevent default for game keys to avoid browser scroll
-            if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright', ' '].includes(k)) {
+            if (mappedKey || e.key === ' ') {
                 e.preventDefault();
             }
-            
-            // Map arrow keys to WASD
-            const keyMap = {
-                'arrowup': 'w',
-                'arrowdown': 's', 
-                'arrowleft': 'a',
-                'arrowright': 'd'
-            };
-            const mappedKey = keyMap[k] || k;
-            
-            if (state.keys.hasOwnProperty(mappedKey)) {
+
+            if (mappedKey) {
                 state.keys[mappedKey] = true;
                 const keyEl = document.getElementById(`key-${mappedKey}`);
                 if(keyEl) keyEl.classList.add('pressed');
@@ -939,7 +940,7 @@ animation: pulse-action 1.5s ease-in-out infinite;
                 e.preventDefault();
                 openModal(state.activeZone);
             }
-            
+
             // ESC to return to main website (when modal is not open)
             if (e.key === 'Escape' && !state.modalOpen) {
                 e.preventDefault();
@@ -950,23 +951,10 @@ animation: pulse-action 1.5s ease-in-out infinite;
         });
 
         window.addEventListener('keyup', (e) => {
-            const k = e.key.toLowerCase();
-            
-            // Prevent default for game keys
-            if (['w', 'a', 's', 'd', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright'].includes(k)) {
+            const mappedKey = getMappedKey(e);
+
+            if (mappedKey) {
                 e.preventDefault();
-            }
-            
-            // Map arrow keys to WASD
-            const keyMap = {
-                'arrowup': 'w',
-                'arrowdown': 's',
-                'arrowleft': 'a',
-                'arrowright': 'd'
-            };
-            const mappedKey = keyMap[k] || k;
-            
-            if (state.keys.hasOwnProperty(mappedKey)) {
                 state.keys[mappedKey] = false;
                 const keyEl = document.getElementById(`key-${mappedKey}`);
                 if(keyEl) keyEl.classList.remove('pressed');
