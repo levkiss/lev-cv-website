@@ -236,8 +236,8 @@ const translations = {
 
         // Hero
         'hero.badge': 'Открыт к предложениям',
-        'hero.heading': 'Инженерия <br class="hidden sm:block">ради <span class="text-zinc-400 dark:text-zinc-500">продукта.</span>',
-        'hero.description': 'Technical Product Leader & Analytics Engineer. Строю data-инфраструктуру и AI-продукты — от сырых данных до работающих решений для бизнеса.',
+        'hero.heading': 'Технические решения <br class="hidden sm:block">для <span class="text-zinc-400 dark:text-zinc-500">бизнес-задач.</span>',
+        'hero.description': 'Technical Product Leader & Analytics Engineer. Строю data-инфраструктуру и AI-продукты — от сырых данных до готовых решений.',
         'hero.cta_meeting': 'Назначить встречу',
         'hero.cta_blog': 'Читать блог',
 
