@@ -17,7 +17,7 @@ const translations = {
         // Hero
         'hero.badge': 'Open to new opportunities',
         'hero.heading': 'Bridging engineering <br class="hidden sm:block">with <span class="text-zinc-400 dark:text-zinc-500">user needs.</span>',
-        'hero.description': 'Technical Product Leader & Analytics Engineer. I build data infrastructures and AI products that solve complex problems with engineering precision and product empathy.',
+        'hero.description': 'Data & AI Engineer. 6+ years building production data systems — distributed pipelines, data warehouses, and AI-powered applications at scale. Working at the intersection of data engineering and LLMs: multi-agent systems, vector storage, and end-to-end AI products.',
         'hero.cta_meeting': 'Schedule a meeting',
         'hero.cta_blog': 'Read my blog',
 
@@ -25,16 +25,16 @@ const translations = {
         'stats.years': 'Years Experience',
         'stats.products': 'Products Shipped',
         'stats.data': 'Data Processed',
-        'stats.education': 'Computer Science',
+        'stats.education': 'PhD Student',
 
         // Journey
         'journey.title': 'Career Roadmap',
         'journey.subtitle': 'Navigate through my professional evolution.',
 
         // Station 1 - Pupas AI
-        'journey.s1.date': 'May 2025 - Dec 2025',
+        'journey.s1.date': 'May 2025 – Feb 2026',
         'journey.s1.company': 'Pupas AI',
-        'journey.s1.role': 'Technical Product',
+        'journey.s1.role': 'AI Engineer & Technical Lead',
         'journey.s1.subtitle': 'AI-Powered DeFi Protocol on Waves',
         'journey.s1.desc': 'Built autonomous liquidity optimization protocol from concept to production. Secured funding and led cross-functional team of 5, delivering AI agents that analyze market conditions and execute investment decisions without human intervention. Achieved 190% APY managing $200K TVL at peak, growing active user base to 60+.',
 
@@ -116,7 +116,7 @@ const translations = {
 
         // Pupas project
         'projects.pupas.title': 'Pupas AI Protocol',
-        'projects.pupas.subtitle': 'Technical Product &middot; Autonomous DeFi Yield Optimization',
+        'projects.pupas.subtitle': 'AI Engineer & Technical Lead &middot; Autonomous DeFi Yield Optimization',
         'projects.pupas.challenge_label': 'The Challenge',
         'projects.pupas.challenge': 'Crypto investors lacked tools to automatically optimize yield across DeFi protocols — manual strategies were slow, risky, and left money on the table. I set out to build an AI-driven protocol that could autonomously manage liquidity and maximize returns on Waves blockchain.',
         'projects.pupas.did_label': 'What I Did',
@@ -237,7 +237,7 @@ const translations = {
         // Hero
         'hero.badge': 'Открыт к предложениям',
         'hero.heading': 'Технические решения <br class="hidden sm:block">для <span class="text-zinc-400 dark:text-zinc-500">бизнес-задач.</span>',
-        'hero.description': 'Technical Product Leader & Analytics Engineer. Строю data-инфраструктуру и AI-продукты — от сырых данных до готовых решений.',
+        'hero.description': 'Data & AI Engineer. 6+ лет строю production-системы данных — пайплайны, хранилища, AI-приложения в промышленных масштабах. Работаю на стыке дата-инжиниринга и LLM: мультиагентные системы, векторные базы данных, сквозные AI-продукты.',
         'hero.cta_meeting': 'Назначить встречу',
         'hero.cta_blog': 'Читать блог',
 
@@ -245,16 +245,16 @@ const translations = {
         'stats.years': 'Лет опыта',
         'stats.products': 'Продуктов в проде',
         'stats.data': 'Данных обработано',
-        'stats.education': 'Computer Science',
+        'stats.education': 'Аспирант',
 
         // Journey
         'journey.title': 'Карьерный путь',
         'journey.subtitle': 'Ключевые этапы профессионального развития.',
 
         // Station 1 - Pupas AI
-        'journey.s1.date': 'Май 2025 – Дек 2025',
+        'journey.s1.date': 'Май 2025 – Фев 2026',
         'journey.s1.company': 'Pupas AI',
-        'journey.s1.role': 'Technical Product',
+        'journey.s1.role': 'AI-инженер и Technical Lead',
         'journey.s1.subtitle': 'AI-протокол DeFi на Waves',
         'journey.s1.desc': 'Запустил автономный протокол оптимизации ликвидности с нуля. Привлёк финансирование, собрал команду из 5 человек. AI-агенты самостоятельно анализируют рынок и принимают инвестиционные решения. На пике — 190% APY, $200K TVL, 60+ активных пользователей.',
 
@@ -336,7 +336,7 @@ const translations = {
 
         // Pupas project
         'projects.pupas.title': 'Pupas AI Protocol',
-        'projects.pupas.subtitle': 'Technical Product &middot; Автономная DeFi-оптимизация',
+        'projects.pupas.subtitle': 'AI Engineer & Technical Lead &middot; Автономная DeFi-оптимизация',
         'projects.pupas.challenge_label': 'Задача',
         'projects.pupas.challenge': 'Крипто-инвесторам не хватало инструментов для автоматической оптимизации доходности в DeFi — ручные стратегии были медленными и рискованными. Я поставил цель создать AI-протокол, который сам управляет ликвидностью и максимизирует доход на блокчейне Waves.',
         'projects.pupas.did_label': 'Что сделал',
